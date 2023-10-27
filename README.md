@@ -1,9 +1,12 @@
 # CS410_finalproject
 
-##Proposal
+## Proposal
 
-Team member - Ananay Mathur
+1. Team member - Ananay Mathur
+
 Team captain - Ananay Mathur
+
+
 
 
 
