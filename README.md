@@ -19,6 +19,23 @@ Main tasks and time cost:
 
 Total time - 20 hours
 
+## Progress Report
+
+Tasks Completed:
+
+1. Cleaning and extracting data from the dataset
+2. Building an user-friendly interface
+
+Tasks to be completed:
+
+1. Building a summarizer
+2. Testing the results
+
+Challenges currently facing:
+
+1. Building an effective summarizer
+
+
 
 
 
