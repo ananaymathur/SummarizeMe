@@ -64,6 +64,13 @@ Challenges currently facing:
    pip install -r requirements.txt
    ```
 
+4. Download spaCy English Language Model (en_core_web_sm):
+
+   ```
+   python -m spacy download en_core_web_sm
+   ```
+
+
 
 
 
