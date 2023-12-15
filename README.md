@@ -86,6 +86,36 @@ To use the application, run the gui.py file. This will open a user interface thr
 
    This is a new feature I added to the project. This feature allows you to input any text into the text box, clicking the submit button then summarize the text entered. In the summary window you can see the summarized version as well as the original text entered. Closing the summary window brings you back to the custom summarizer page where you can enter other text or click the button to return to the main menu.
 
+### Completion status and final write-up
+
+According to the initial proposal, I was able to complete the following tasks successfully:
+
+1. Cleaning and extracting data from the dataset
+
+   I was able to extract important data such as the title, author, and text from the dataset. I was also able to clean the dataset by removing articles that were not in English or were poorly formatted.
+
+2. Building an user-friendly interface
+
+   I was able to build an user-friendly graphical interface that not only looked good, but also allowed ease of use. The interface had to be increased to incooperate the additional features I added to the project.
+
+3. Building a summarizer
+
+   I was able to build an effective and fast extractive summarizer using the SpaCy library. Extractive summarizers have their drawbacks but I chose to go with one because of how fast they can work and the ease of setting up one on a new machine in contrast to an abstractive summarizer.
+
+4. Testing the results
+
+   I was able to validate that summarizer was working on most of the inputs. The inputs where the summarizer wasn't performing the best are small documents as summarizing an already short piece of text is a difficult challenge.
+
+I was also able to add features to the project that initially were not planned:
+
+1. Summarizing articles from the web
+
+   I was able to add a feature where the user can find an article online and copy-paste the article's URL into the application. The application then uses the newspaper import to get the article's text. This then was put into the summarizer to produce a summary of the article. This summary along with the original content of the article is displayed to the user.
+
+2. Custom summarizer
+
+   This feature allows users to enter any text they want to summarize into the application. The application then shows the summary along with the original input to the user.
+
 
 
 
