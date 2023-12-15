@@ -70,6 +70,14 @@ Challenges currently facing:
    python -m spacy download en_core_web_sm
    ```
 
+### Using the application
+
+To use the application, run the gui.py file. This will open a user interface through which all the features of the application can be used. The application opens on a main menu which has 3 buttons leading to the features:
+
+1. Medium Articles:
+
+   This was the original feature planned. This feature displays a list of titles of Medium articles. Clicking on any of these article titles opens a new window where you can read the summary of that article. There is also a button to show the full article if you want to read the whole thing. Closing this summary window takes you back to the list of Medium articles and there is a button to take you back to the main menu.
+
 
 
 
