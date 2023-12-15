@@ -35,6 +35,16 @@ Challenges currently facing:
 
 1. Building an effective summarizer
 
+## Final documentation
+
+### Setting up the project
+
+1. Create a Virtual Environment (Optional but recommended):
+
+   ```
+   python -m venv myenv
+   ```
+
 
 
 
