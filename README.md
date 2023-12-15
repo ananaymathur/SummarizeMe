@@ -72,12 +72,19 @@ Challenges currently facing:
 
 ### Using the application
 
-To use the application, run the gui.py file. This will open a user interface through which all the features of the application can be used. The application opens on a main menu which has 3 buttons leading to the features:
+To use the application, run the gui.py file. This will open a user interface through which all the application features can be used. The application opens on a main menu which has 3 buttons leading to the features:
 
 1. Medium Articles:
 
    This was the original feature planned. This feature displays a list of titles of Medium articles. Clicking on any of these article titles opens a new window where you can read the summary of that article. There is also a button to show the full article if you want to read the whole thing. Closing this summary window takes you back to the list of Medium articles and there is a button to take you back to the main menu.
 
+2. Article link:
+
+   This is a new feature that I added to the project. This feature allows you to enter the URL of a web article into a text box, clicking submit then opens a new window which displays the summary of the article and also has an option to show the entire article in case you want to look at it too. Closing the summary window brings you back to the link summarizer page where you can paste other links or click the button to return to the main menu.
+
+3. Custom summarize:
+
+   This is a new feature I added to the project. This feature allows you to input any text into the text box, clicking the submit button then summarize the text entered. In the summary window you can see the summarized version as well as the original text entered. Closing the summary window brings you back to the custom summarizer page where you can enter other text or click the button to return to the main menu.
 
 
 
