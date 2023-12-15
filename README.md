@@ -45,6 +45,25 @@ Challenges currently facing:
    python -m venv myenv
    ```
 
+2. Activate the Virtual Environment:
+
+   On Windows:
+   
+   ```
+   .\myenv\Scripts\activate
+   ```
+
+   On Mac:
+
+   ```
+   source myenv/bin/activate
+   ```
+3. Using requirements.txt to install the required packages:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
 
 
 
