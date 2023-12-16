@@ -116,6 +116,10 @@ I was also able to add features to the project that initially were not planned:
 
    This feature allows users to enter any text they want to summarize into the application. The application then shows the summary along with the original input to the user.
 
+### Presentation Video Link
+
+https://drive.google.com/file/d/1JORg2k6fBwUYylIQqWSvQEuwixujzhrx/view?usp=sharing
+
 
 
 
