@@ -32,8 +32,8 @@ Ensure you have Python 3.8 or higher installed. It is recommended to use a virtu
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/summarizer-app.git
-    cd summarizer-app
+    git clone https://github.com/ananaymathur/SummarizeMe.git
+    cd SummarizeMe
     ```
 
 2. **Create a Virtual Environment (Optional but recommended):**
