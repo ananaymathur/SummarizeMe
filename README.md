@@ -1,6 +1,6 @@
-# Summarizer App
+# SummarizeMe App
 
-The Summarizer App is an interactive desktop application built using Python and `tkinter` that provides users with the ability to summarize Medium articles, web articles from URLs, and custom text input. Utilizing the SpaCy NLP library for extractive summarization, the app helps users quickly digest large amounts of text by highlighting the most important information.
+The SummarizeMe App is an interactive desktop application built using Python and `tkinter` that provides users with the ability to summarize Medium articles, web articles from URLs, and custom text input. Utilizing the SpaCy NLP library for extractive summarization, the app helps users quickly digest large amounts of text by highlighting the most important information.
 
 ## Features
 
