@@ -1,127 +1,128 @@
-# CS410_finalproject
+# Summarizer App
 
-## Proposal
+The Summarizer App is an interactive desktop application built using Python and `tkinter` that provides users with the ability to summarize Medium articles, web articles from URLs, and custom text input. Utilizing the SpaCy NLP library for extractive summarization, the app helps users quickly digest large amounts of text by highlighting the most important information.
 
-Team member - Ananay Mathur
+## Features
 
-Team captain - Ananay Mathur
+- **Medium Article Summarization**: Browse and summarize a curated list of Medium articles directly within the app. Users can read the summary or expand to view the full content.
+- **URL Article Summarization**: Input any web article URL to generate a concise summary. The app fetches the article content, summarizes it, and displays the original text alongside the summary.
+- **Custom Text Summarization**: Input any text directly into the app to receive a summarized version, allowing for quick analysis of reports, essays, or other large text blocks.
+- **User-Friendly Interface**: The application provides an intuitive graphical interface with easy navigation, ensuring a smooth user experience.
 
-I plan on building a text summarization model to help summarize lengthy Medium articles. I will be making an interface where the user can select which Medium article they want to be summarized. For this project, I will be using a Kaggle dataset of Medium articles and will summarize them on demand using my text summarization model. I think this is a fascinating use case as these articles can get pretty lengthy sometimes and getting a gist of what the article says can help readers decide if they want to commit to reading the entire thing. This can be extended in the future to directly get articles from Medium, instead of relying on a dataset of articles. I will maily be utilizing SpaCy Python library to do the text summarization. The output should be a short summarization of the article and I will compare the contents of the two and see if the summarization is valid. 
+## Project Structure
 
-I plan on using Python for this project.
+```plaintext
+summarizer-app/
+│
+├── gui.py                # Main GUI script for the application
+├── summarizer.py         # Core summarization logic using SpaCy
+├── requirements.txt      # Required dependencies for the project
+├── articles.csv          # Kaggle dataset of Medium articles in .csv format
+└── README.md             # Project documentation
+```
 
-Main tasks and time cost:
+## Setup and Installation
 
-1. Cleaning and extracting data from the dataset - 6 hours
-2. Building an user-friendly interface - 5 hours
-3. Building a summarizer - 6 hours
-4. Testing the results - 3 hours
+### Prerequisites
 
-Total time - 20 hours
+Ensure you have Python 3.8 or higher installed. It is recommended to use a virtual environment for managing dependencies.
 
-## Progress Report
+### Setting Up the Project
 
-Tasks Completed:
+1. **Clone the repository:**
 
-1. Cleaning and extracting data from the dataset
-2. Building an user-friendly interface
+    ```bash
+    git clone https://github.com/your-username/summarizer-app.git
+    cd summarizer-app
+    ```
 
-Tasks to be completed:
+2. **Create a Virtual Environment (Optional but recommended):**
 
-1. Building a summarizer
-2. Testing the results
+    ```bash
+    python -m venv myenv
+    ```
 
-Challenges currently facing:
+3. **Activate the Virtual Environment:**
 
-1. Building an effective summarizer
+    - On Windows:
 
-## Final documentation
+        ```bash
+        .\myenv\Scripts\activate
+        ```
 
-### Setting up the project
+    - On Mac:
 
-1. Create a Virtual Environment (Optional but recommended):
+        ```bash
+        source myenv/bin/activate
+        ```
 
-   ```
-   python -m venv myenv
-   ```
+4. **Install Required Packages using `requirements.txt`:**
 
-2. Activate the Virtual Environment:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-   On Windows:
-   
-   ```
-   .\myenv\Scripts\activate
-   ```
+5. **Download the SpaCy English Language Model:**
 
-   On Mac:
+    ```bash
+    python -m spacy download en_core_web_sm
+    ```
 
-   ```
-   source myenv/bin/activate
-   ```
-3. Using requirements.txt to install the required packages:
+## Using the Application
 
-   ```
-   pip install -r requirements.txt
-   ```
+To start the application, run the `gui.py` file:
 
-4. Download spaCy English Language Model (en_core_web_sm):
+```bash
+python gui.py
+```
 
-   ```
-   python -m spacy download en_core_web_sm
-   ```
+Upon launching, the main menu will display three options:
 
-### Using the application
+1. **Open List of Medium Articles:**
+    - Browse and select articles to summarize directly from a predefined list of Medium articles.
 
-To use the application, run the gui.py file. This will open a user interface through which all the application features can be used. The application opens on a main menu which has 3 buttons leading to the features:
+2. **Enter URL of an Article:**
+    - Input the URL of any web article, and the app will fetch, summarize, and display the content.
 
-1. Medium Articles:
+3. **Enter Custom Text:**
+    - Input custom text to receive a summarized version of the entered content.
 
-   This was the original feature planned. This feature displays a list of titles of Medium articles. Clicking on any of these article titles opens a new window where you can read the summary of that article. There is also a button to show the full article if you want to read the whole thing. Closing this summary window takes you back to the list of Medium articles and there is a button to take you back to the main menu.
+## Application Components
 
-2. Article link:
+### `summarizer.py`
 
-   This is a new feature that I added to the project. This feature allows you to enter the URL of a web article into a text box, clicking submit then opens a new window which displays the summary of the article and also has an option to show the entire article in case you want to look at it too. Closing the summary window brings you back to the link summarizer page where you can paste other links or click the button to return to the main menu.
+- This script contains the core summarization functionality using SpaCy.
+- The summarizer analyzes the input text, calculates word frequencies, scores sentences, and selects the top sentences to form the summary.
 
-3. Custom summarize:
+### `gui.py`
 
-   This is a new feature I added to the project. This feature allows you to input any text into the text box, clicking the submit button then summarize the text entered. In the summary window you can see the summarized version as well as the original text entered. Closing the summary window brings you back to the custom summarizer page where you can enter other text or click the button to return to the main menu.
+- Implements the graphical user interface using `tkinter`.
+- Contains classes for different application windows and functionalities:
+    - **MainMenu**: The main navigation menu of the app.
+    - **ListOfArticles**: Handles displaying and summarizing Medium articles.
+    - **URLofArticle**: Allows users to input URLs and summarize the fetched content.
+    - **CustomText**: Enables users to input and summarize custom text.
 
-### Completion status and final write-up
+## Completion and Achievements
 
-According to the initial proposal, I was able to complete the following tasks successfully:
+- Successfully developed a user-friendly interface integrating Medium article summarization, URL input summarization, and custom text summarization.
+- Implemented efficient data cleaning and text extraction techniques using SpaCy.
+- Enhanced the app with additional features beyond the initial scope, including URL-based summarization and a flexible custom text summarizer.
+- Validated summarization performance on various text inputs, optimizing for speed and accuracy.
 
-1. Cleaning and extracting data from the dataset
+## License
 
-   I was able to extract important data such as the title, author, and text from the dataset. I was also able to clean the dataset by removing articles that were not in English or were poorly formatted.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-2. Building an user-friendly interface
+## Contact
 
-   I was able to build an user-friendly graphical interface that not only looked good, but also allowed ease of use. The interface had to be increased to incooperate the additional features I added to the project.
+**Your Name**  
+Email: [ananaymathur@gmail.com](mailto:ananaymathur@gmail.com)  
 
-3. Building a summarizer
+## Acknowledgments
 
-   I was able to build an effective and fast extractive summarizer using the SpaCy library. Extractive summarizers have their drawbacks but I chose to go with one because of how fast they can work and the ease of setting up one on a new machine in contrast to an abstractive summarizer.
-
-4. Testing the results
-
-   I was able to validate that summarizer was working on most of the inputs. The inputs where the summarizer wasn't performing the best are small documents as summarizing an already short piece of text is a difficult challenge.
-
-I was also able to add features to the project that initially were not planned:
-
-1. Summarizing articles from the web
-
-   I was able to add a feature where the user can find an article online and copy-paste the article's URL into the application. The application then uses the newspaper import to get the article's text. This then was put into the summarizer to produce a summary of the article. This summary along with the original content of the article is displayed to the user.
-
-2. Custom summarizer
-
-   This feature allows users to enter any text they want to summarize into the application. The application then shows the summary along with the original input to the user.
-
-### Presentation Video Link
-
-https://drive.google.com/file/d/1JORg2k6fBwUYylIQqWSvQEuwixujzhrx/view?usp=sharing
-
-
-
-
+- [SpaCy](https://spacy.io/) for natural language processing capabilities.
+- [Python](https://www.python.org/) for providing a flexible programming environment.
+- Libraries such as `tkinter` and `newspaper3k` for enhancing the application's user interaction and web content extraction capabilities.
 
 
